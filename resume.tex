@@ -1,0 +1,117 @@
+% LaTeX resume using res.cls
+\documentclass[margin]{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\usepackage{xcolor}
+\usepackage[normalem]{ulem}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue
+}
+\setlength{\textwidth}{5.1in} % set width of text portion
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+ \moveleft.5\hoffset\centerline{\large\bf George Balatsouras}
+% Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+ \moveleft.5\hoffset\centerline{23 Achaion Street}
+ \moveleft.5\hoffset\centerline{Agia Paraskevi (Athens 15343), Attica, Greece}
+ \moveleft.5\hoffset\centerline{(Home) +30 210 6004683   (Cell) +30 6944 205788}
+
+
+\begin{resume}
+
+\section{EDUCATION}
+        {\sl Bachelor of Science,} Computer Science \hfill 2004 - 2009  \\
+        Ethnikon kai Kapodistriakon Panepistimion Athinon / University of Athens \\
+        Department of Informatics \& Telecommunications \\
+        Grade: 8.80 / 10
+
+        {\sl Master of Science,} Computing Systems \hfill 2009 - 2012 \\
+        Ethnikon kai Kapodistriakon Panepistimion Athinon / University of Athens \\
+        Department of Informatics \& Telecommunications \\
+        expected February 2012 \\ 
+        Grade (current): 9.76 / 10
+
+\section{LANGUAGES} Greek (native), English (fluent)
+
+\section{CERTIFICATES}
+        {\sl Certificate of Proficiency in English, University of Michigan (USA)} \hfill 2003
+
+\section{EXPERIENCE}
+        {\sl Research Assistant} \hfill July 2011 - present \\
+        University of Athens - Dept. of Informatics \& Telecommunications
+        \begin{itemize} \itemsep -2pt %reduce space between items
+        \item Project: PADECL (``Advanced Program Analysis Using Declarative Languages'')
+        \item Supervisor: Assoc. Prof. Yannis Smaragdakis
+          (\href{mailto:smaragd@di.uoa.gr}{\nolinkurl{smaragd@di.uoa.gr}})
+        \end{itemize}
+        
+        {\sl Research Programmer} \hfill October 2010 - June 2011 \\
+        University of Athens - Dept. of Informatics \& Telecommunications \\
+        Project \href{http://pernasvip.di.uoa.gr/index.php}{PERNASVIP}
+        \begin{itemize}
+        \item Description: Development of the Itinerary Planner Server, i.e. the server who
+          generates the 
+          \href{http://pernasvip.di.uoa.gr/index.php/gen-spef/itinerary-example}{itineraries} 
+          that will be used for navigation by the end-users of the system
+        \item Supervisor: Prof. Alex Delis
+          (\href{mailto:ad@di.uoa.gr}{\nolinkurl{ad@di.uoa.gr}})
+        \end{itemize}
+            
+\section{ACTIVITIES}
+        {\sl Teaching Assistant} \hfill 2009 - 2011 \\
+        University of Athens - Dept. of Informatics \& Telecommunications
+
+\section{TECHNICAL \\ SKILLS}
+        {\sl Programming / Scripting Languages:} 
+        C/C++, Java, Python, Prolog, Haskell, PHP, Bourne / Bash, Datalog, SQL
+
+        {\sl Operating Systems:}
+        Linux, Unix and Unix-like operating systems, BSD, Windows
+
+        {\sl Database Management Systems and Tools:}
+        MySQL, DBDesigner
+
+        {\sl Compilers, Debugging Tools, Editors, IDEs, and Version Control Systems:}
+        \begin{itemize}
+        \item GCC/ G++, GDB, Valgrind
+        \item Emacs, Eclipse, Geany
+        \item Mercurial Version Control System
+        \item Microsoft Visual Studio 6, Visual Studio 2005
+        \end{itemize}
+
+        {\sl Other useful Platforms and Tools:}
+        \begin{itemize}
+        \item AspectJ: aspect-oriented extension for the Java Programming Language
+        \item GNU Bison, Flex Lexical Analyzer
+        \item ECLiPSe Constraint Programming System
+        \item Xilinx ISE WebPACK
+        \end{itemize}
+
+        {\sl Libraries and Standards:}
+        BCEL, CGAL, GNU MP Library , MPI, OpenGL, Pthreads
+
+        {\sl Simulators:}
+        SPIM, Xilinx ModelSim , SimpleScalar Simulator
+
+        {\sl Other Skills:}
+        Concurrent Programming, UNIX Systems Programming, Secure Coding in C, HTML + CSS
+
+\section{FIELDS OF INTEREST} Compilers, Programming Languages, Program Analysis, Logic Programming, \\ 
+Deductive Databases, Operating Systems, System programming, Web Crawlers
+
+\section{EXTRA-CURRICULAR \\ ACTIVITIES}             
+Reading, Music (awarded a {\it Piano Certificate}), Soccer
+
+\end{resume}
+\end{document}
+
+
+
+
