@@ -3,6 +3,7 @@
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 \usepackage{xcolor}
+\usepackage{setspace}
 \usepackage[normalem]{ulem}
 \usepackage{hyperref}
 \hypersetup{
@@ -40,8 +41,7 @@
         {\sl Master of Science,} Computing Systems \hfill 2009 - 2012 \\
         Ethnikon kai Kapodistriakon Panepistimion Athinon / University of Athens \\
         Department of Informatics \& Telecommunications \\
-        expected April 2012 \\ 
-        Grade (current): 9.76 / 10
+        Grade: 9.78 / 10
 
 \section{LANGUAGES} Greek (native), English (fluent)
 
@@ -49,6 +49,27 @@
         {\sl Certificate of Proficiency in English, University of Michigan (USA)} \hfill 2003
 
 \section{EXPERIENCE}
+
+        {\sl Software Engineer Intern at LogicBlox} \hfill April 2012 - August 2012 \\
+        Compiler Technologies at LogicBlox, Inc - Greater Atlanta Area
+        \begin{itemize}
+        \item Contributed to the active development of \texttt{BloxAnalysis},
+          a tool used to perform static analysis of DatalogLB programs
+          by representing them in a LogicBlox workspace
+        \item Implemented a clone-detection library using \texttt{BloxAnalysis}
+          that is able to: 
+          \begin{itemize} 
+          \item trace isomorphic formulas
+          \item identify redundant rules in Datalog programs
+          \item detect alternate indices that can be used in place of original predicates 
+            for optimization purposes
+          \end{itemize}
+        \item Implemented a string-concatenation library that reduces the space complexity
+          of the intermediate materialized strings from $O(n^2)$ to $O(nlogn)$
+        \item Supervisor: Shan Shan Huang
+          (\href{mailto:ssh@logicblox.com}{\nolinkurl{ssh@logicblox.com}})
+        \end{itemize}
+
         {\sl Research Assistant} \hfill July 2011 - present \\
         University of Athens - Dept. of Informatics \& Telecommunications
         \begin{itemize} \itemsep -2pt %reduce space between items
@@ -68,7 +89,7 @@
         \item Supervisor: Prof. Alex Delis
           (\href{mailto:ad@di.uoa.gr}{\nolinkurl{ad@di.uoa.gr}})
         \end{itemize}
-            
+
 \section{ACTIVITIES}
         {\sl Teaching Assistant} \hfill 2009 - 2011 \\
         University of Athens - Dept. of Informatics \& Telecommunications
@@ -100,7 +121,7 @@
         \end{itemize}
 
         {\sl Libraries and Standards:}
-        BCEL, CGAL, GNU MP Library , MPI, OpenGL, Pthreads
+        BCEL, CGAL, GNU MP Library, MPI, OpenGL, Pthreads
 
         {\sl Simulators:}
         SPIM, Xilinx ModelSim, SimpleScalar Simulator
