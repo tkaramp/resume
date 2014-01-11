@@ -1,156 +1,200 @@
-% LaTeX resume using res.cls
-\documentclass[margin]{res}
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font 
-\usepackage{xcolor}
-\usepackage{setspace}
-\usepackage[normalem]{ulem}
+%-----------------------------------------------
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%------------------------------------------------
+
+\documentclass{resume}
+
+\usepackage{bookmark}
+\usepackage{paralist}
+\usepackage{multirow}
+
+% Modify document margins
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+
 \usepackage{hyperref}
 \hypersetup{
   colorlinks=true,
   urlcolor=blue
 }
-\setlength{\textwidth}{5.1in} % set width of text portion
+
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{bib/resume.bib}
+\addbibresource{bib/proceedings.bib}
+
+%-----------------------
+%   HEADER SECTION
+%-----------------------
+
+\name{Georgios ``George'' Balatsouras}
+\address{23 Achaion Street \\ Agia Paraskevi (Athens 15343), Attica, Greece}
+\address{(Home) +30 210 6004683 \\ (Cell) +30 6944 205788 \\
+  \href{mailto:gbalats@gmail.com}{\nolinkurl{gbalats@gmail.com}}}
 
 \begin{document}
-
 \newcommand{\mytilde}{\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}
 
-% Center the name over the entire width of resume:
- \moveleft.5\hoffset\centerline{\large\bf Georgios ``George'' Balatsouras}
-% Draw a horizontal line the whole width of resume:
- \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
-% address begins here
-% Again, the address lines must be centered over entire width of resume:
- \moveleft.5\hoffset\centerline{23 Achaion Street}
- \moveleft.5\hoffset\centerline{Agia Paraskevi (Athens 15343), Attica, Greece}
- \moveleft.5\hoffset\centerline{(Home) +30 210 6004683   (Cell) +30 6944 205788}
- \moveleft.5\hoffset\centerline{\href{mailto:gbalats@gmail.com}{\nolinkurl{gbalats@gmail.com}}}
+%------------------------------
+%     EDUCATION SECTION
+%------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Ph.D. Candidate,} Static Program Analysis \hfill {2012 --} \\
+Ethnikon kai Kapodistriakon Panepistimion Athinon / University of Athens \\
+Department of Informatics \& Telecommunications \\
+Advisor: Assoc.~Prof.~Yannis Smaragdakis
+(\href{mailto:smaragd@di.uoa.gr}{\nolinkurl{smaragd@di.uoa.gr}})
+
+{\bf Master of Science,} Computing Systems \hfill {2009 -- 2012} \\
+Ethnikon kai Kapodistriakon Panepistimion Athinon / University of Athens \\
+Department of Informatics \& Telecommunications \\
+Grade: $9.78 / 10$. Top of graduating class (31 graduates).
+
+{\bf Bachelor of Science,} Computer Science \hfill {2004 -- 2009}  \\
+Ethnikon kai Kapodistriakon Panepistimion Athinon / University of Athens \\
+Department of Informatics \& Telecommunications \\
+Grade: $8.80 / 10$. Top of graduating class (\mytilde{}50 graduates).
+
+\end{rSection}
+
+%------------------------------
+%   WORK EXPERIENCE SECTION
+%------------------------------
+
+\begin{rSection}{Experience}
+
+\begin{rSubsection}{LogicBlox, Inc}
+  {April 2012 -- August 2012}
+  {Software Engineer Intern, Compiler Technologies}
+  {Atlanta, GA, USA}
+\item Supervisor: Shan Shan Huang
+  (\href{mailto:ssh@logicblox.com}{\nolinkurl{ssh@logicblox.com}})
+\itemsep +0.5pt % increase space between items
+\item Contributed to the active development of \textsc{BloxAnalysis},
+  a tool used to perform static analysis of Datalog programs
+  by representing them in a LogicBlox workspace.
+\item Implemented a clone-detection library using \textsc{BloxAnalysis}
+  that is able to
+  \begin{inparaenum}[(i)]
+  \item trace isomorphic formulas,
+  \item identify redundant rules in Datalog programs, and
+  \item detect alternate indices that can be used in place of original
+    predicates for optimization purposes.
+  \end{inparaenum}
+\item Implemented a string-concatenation library that reduces the
+  space complexity of the intermediate materialized strings from
+  $O(n^2)$ to $O(nlogn)$.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}
+  {University of Athens}
+  {July 2011 -- present}
+  {Research Assistant, Dept. of Informatics \& Telecommunications}
+  {Athens, Greece}
+\item Supervisor: Assoc. Prof. Yannis Smaragdakis
+  (\href{mailto:smaragd@di.uoa.gr}{\nolinkurl{smaragd@di.uoa.gr}})
+\item Project: PADECL (``Advanced Program Analysis Using Declarative
+  Languages'')
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}
+  {University of Athens}
+  {October 2010 -- June 2011}
+  {Research Developer, Dept. of Informatics \& Telecommunications}
+  {Athens, Greece}
+\item Supervisor: Prof. Alex Delis
+  (\href{mailto:ad@di.uoa.gr}{\nolinkurl{ad@di.uoa.gr}})
+\item Project: \href{http://pernasvip.di.uoa.gr/index.php}{PERNASVIP}
+\item Description: Development of the Itinerary Planner Server,
+  i.e. the server who generates the
+  \href{http://pernasvip.di.uoa.gr/index.php/gen-spef/itinerary-example}{itineraries}
+  that will be used for navigation by the end-users of the system
+\end{rSubsection}
+
+\end{rSection}
+
+\begin{rSection}{Languages and Certificates}
+  Greek (native), English (fluent) \\
+  Certificate of Proficiency in English, University of Michigan (USA)
+  \hfill 2003
+\end{rSection}
 
 
-\begin{resume}
+%----------------------------------
+%   TECHNICAL STRENGTHS SECTION
+%----------------------------------
 
-% \section{OBJECTIVE}
-%         To increase my knowledge and understand the practical issues of deductive databases
-%         by working for an innovative U.S. company that specializes in this field.
+\begin{rSection}{Technical Skills}
 
-\section{EDUCATION}
-        {\sl Ph.D. Candidate}  \hfill 2012 - \\
-        Ethnikon kai Kapodistriakon Panepistimion Athinon / University of Athens \\
-        Department of Informatics \& Telecommunications \\
-        Advisor: Assoc.~Prof.~Yannis Smaragdakis
-        (\href{mailto:smaragd@di.uoa.gr}{\nolinkurl{smaragd@di.uoa.gr}})
+{\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 
-        {\sl Master of Science,} Computing Systems \hfill 2009 - 2012 \\
-        Ethnikon kai Kapodistriakon Panepistimion Athinon / University of Athens \\
-        Department of Informatics \& Telecommunications \\
-        Grade: $9.78 / 10$. Top of graduating class (31 graduates).
+Programming Languages
+   & C/C++, Java, Python, Bash, Haskell, Prolog, Datalog \\
 
-        {\sl Bachelor of Science,} Computer Science \hfill 2004 - 2009  \\
-        Ethnikon kai Kapodistriakon Panepistimion Athinon / University of Athens \\
-        Department of Informatics \& Telecommunications \\
-        Grade: $8.80 / 10$. Top of graduating class (\mytilde{}50 graduates).
+Version Control Systems
+   & Git, Mercurial, Subversion \\
 
-\section{LANGUAGES} Greek (native), English (fluent)
+Editors and IDEs
+   & Emacs, Eclipse, NetBeans, Microsoft Visual Studio 6 \\
 
-\section{CERTIFICATES}
-        {\sl Certificate of Proficiency in English, University of Michigan (USA)} \hfill 2003
+Build Automation
+   & GNU Make, Apache Ant, Apache Maven \\
 
-\section{EXPERIENCE}
+UNIX Skills
+   & Shell Scripting, Systems Programming, Command-line Utilities \\
 
-        {\sl Software Engineer Intern at LogicBlox} \hfill April 2012 - August 2012 \\
-        Compiler Technologies at LogicBlox, Inc - Atlanta, GA, USA
-        \begin{itemize}
-        \item Contributed to the active development of \texttt{BloxAnalysis},
-          a tool used to perform static analysis of DatalogLB programs
-          by representing them in a LogicBlox workspace
-        \item Implemented a clone-detection library using \texttt{BloxAnalysis}
-          that is able to: 
-          \begin{itemize} 
-          \item trace isomorphic formulas
-          \item identify redundant rules in Datalog programs
-          \item detect alternate indices that can be used in place of original predicates 
-            for optimization purposes
-          \end{itemize}
-        \item Implemented a string-concatenation library that reduces the space complexity
-          of the intermediate materialized strings from $O(n^2)$ to $O(nlogn)$
-        \item Supervisor: Shan Shan Huang
-          (\href{mailto:ssh@logicblox.com}{\nolinkurl{ssh@logicblox.com}})
-        \end{itemize}
+Databases and Tools
+   & SQL, MySQL, JDBC, DBDesigner \\
 
-        {\sl Research Assistant} \hfill July 2011 - present \\
-        University of Athens - Dept. of Informatics \& Telecommunications
-        \begin{itemize} \itemsep -2pt %reduce space between items
-        \item Project: PADECL (``Advanced Program Analysis Using Declarative Languages'')
-        \item Supervisor: Assoc. Prof. Yannis Smaragdakis
-          (\href{mailto:smaragd@di.uoa.gr}{\nolinkurl{smaragd@di.uoa.gr}})
-        \end{itemize}
-        
-        {\sl Research Programmer} \hfill October 2010 - June 2011 \\
-        University of Athens - Dept. of Informatics \& Telecommunications \\
-        Project \href{http://pernasvip.di.uoa.gr/index.php}{PERNASVIP}
-        \begin{itemize}
-        \item Description: Development of the Itinerary Planner
-          Server, i.e. the server who generates the
-          \href{http://pernasvip.di.uoa.gr/index.php/gen-spef/itinerary-example}{itineraries}
-          that will be used for navigation by the end-users of the
-          system
-        \item Supervisor: Prof. Alex Delis
-          (\href{mailto:ad@di.uoa.gr}{\nolinkurl{ad@di.uoa.gr}})
-        \end{itemize}
+Compilers and Debuggers
+   & GCC / G++, GDB, Valgrind \\
 
-\section{ACTIVITIES}
-        {\sl Teaching Assistant} \hfill 2009 - 2011 \\
-        University of Athens - Dept. of Informatics \& Telecommunications
+Concurrent Programming
+   & Pthreads, MPI, Java (low-level API, \texttt{java.util.concurrent.*}) \\
 
-\section{TECHNICAL \\ SKILLS}
-        {\sl Programming / Scripting Languages:} 
-        C/C++, Java, Python, Prolog, Haskell, PHP, Bourne / Bash, Datalog, SQL
+Operating Systems
+   & Linux, BSD, Unix and Unix-like operating systems, Windows \\
 
-        {\sl Operating Systems:}
-        Linux, Unix and Unix-like operating systems, BSD, Windows
+Frameworks
+   & ASM, BCEL, AspectJ, CGAL, ECLiPSe \\
 
-        {\sl Database Management Systems and Tools:}
-        MySQL, DBDesigner
+Web Development
+   & HTML5 + CSS, PHP, JSP \\
 
-        {\sl Compilers, Debugging Tools, Editors, IDEs, and Version Control Systems:}
-        \begin{itemize}
-        \item GCC/ G++, GDB, Valgrind
-        \item Emacs, Eclipse, Geany
-        \item Mercurial Version Control System
-        \item Git Version Control System
-        \item Microsoft Visual Studio 6, Visual Studio 2005
-        \end{itemize}
+Other
+   & GNU Bison + Flex Lexical Analyzer, \LaTeX{}, LibreOffice \\
+\end{tabular}}
+\end{rSection}
 
-        {\sl Other useful Platforms and Tools:}
-        \begin{itemize}
-        \item AspectJ: aspect-oriented extension for the Java Programming Language
-        \item GNU Bison, Flex Lexical Analyzer
-        \item ECLiPSe Constraint Programming System
-        \item Xilinx ISE WebPACK
-        \end{itemize}
+%-------------------------------------------
+%   EXTRA-CURRICULAR ACTIVITIES SECTION
+%-------------------------------------------
 
-        {\sl Bytecode Engineering Libraries:}
-        ASM, BCEL
+\begin{rSection}{Activities}
+  {\bf Teaching Assistant} \hfill {2009 -- 2014} \\
+  University of Athens - Dept. of Informatics \& Telecommunications \\
+\end{rSection}
 
-        {\sl Libraries and Standards:}
-        CGAL, GNU MP Library, MPI, OpenGL, Pthreads
+\begin{rSection}{Extra-Curricular Activities}
+  Reading, Music (piano, guitar), Soccer \\
+\end{rSection}
 
-        {\sl Simulators:}
-        SPIM, Xilinx ModelSim, SimpleScalar Simulator
 
-        {\sl Other Skills:}
-        Concurrent Programming, UNIX Systems Programming, Secure Coding in C, HTML + CSS, \LaTeX
+%---------------------------
+%   PUBLICATIONS SECTION
+%---------------------------
 
-\section{FIELDS OF INTEREST} Compilers, Programming Languages, Program Analysis, Logic Programming, \\ 
-Deductive Databases, Operating Systems, System programming, Search Engines and Web Crawling
+\begin{rSection}{Publications}
+  \begin{rSubsection}{}{}{}{}
+    \itemsep +0.5pt % increase space between items
+  \item \fullcite{jphantom}
+  \item \fullcite{setbased}
+  \end{rSubsection}
+\end{rSection}
 
-\section{EXTRA-CURRICULAR \\ ACTIVITIES}             
-Reading, Music (piano/guitar), Soccer
-
-\end{resume}
 \end{document}
-
-
-
-

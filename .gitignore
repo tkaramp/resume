@@ -1,2 +1,8 @@
-resume.log
-resume.pdf
+*.aux
+*.log
+*.bbl
+*.blg
+*.out
+**/auto/*.el
+/resume-blx.bib
+/resume.run.xml
