@@ -7,6 +7,7 @@
 \usepackage{bookmark}
 \usepackage{paralist}
 \usepackage{multirow}
+\usepackage{enumitem}
 
 % Modify document margins
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
@@ -25,13 +26,14 @@
 %   HEADER SECTION
 %-----------------------
 
-\name{Georgios ``George'' Balatsouras}
-\address{23 Achaion Street \\ Agia Paraskevi (Athens 15343), Attica, Greece}
-\address{(Home) +30 210 6004683 \\ (Cell) +30 6944 205788 \\
-  \href{mailto:gbalats@gmail.com}{\nolinkurl{gbalats@gmail.com}}}
+\name{Anastasios Antoniadis}
+\address{6 Paioniou Street \\ Kamatero (Athens 13451), Attica, Greece}
+\address{(Home) +30 210 2318223 \\ (Cell) +30 6970236358 \\
+  \href{mailto:a.antoniadis1989@gmail.com}{\nolinkurl{a.antoniadis1989@gmail.com}}}
 
 \begin{document}
 \newcommand{\mytilde}{\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}
+\newcommand{\indentitem}{\setlength\itemindent{25pt}}
 
 %------------------------------
 %     EDUCATION SECTION
@@ -39,21 +41,18 @@
 
 \begin{rSection}{Education}
 
-{\bf Ph.D. Candidate,} Static Program Analysis \hfill {2012 --} \\
+{\bf Master of Science,} Computing Systems \hfill {2014 -- } \\
 Ethnikon kai Kapodistriakon Panepistimion Athinon / University of Athens \\
 Department of Informatics \& Telecommunications \\
-Advisor: Assoc.~Prof.~Yannis Smaragdakis
-(\href{mailto:smaragd@di.uoa.gr}{\nolinkurl{smaragd@di.uoa.gr}})
+Current Grade: $10 / 10$.
 
-{\bf Master of Science,} Computing Systems \hfill {2009 -- 2012} \\
+{\bf Bachelor of Science,} Computer Science \hfill {2006 -- 2014}  \\
 Ethnikon kai Kapodistriakon Panepistimion Athinon / University of Athens \\
 Department of Informatics \& Telecommunications \\
-Grade: $9.78 / 10$. Top of graduating class (31 graduates).
-
-{\bf Bachelor of Science,} Computer Science \hfill {2004 -- 2009}  \\
-Ethnikon kai Kapodistriakon Panepistimion Athinon / University of Athens \\
-Department of Informatics \& Telecommunications \\
-Grade: $8.80 / 10$. Top of graduating class (\mytilde{}50 graduates).
+Thesis: ''Declarative Points-to Analysis on Different Datalog Engines'' \href{http://cgi.di.uoa.gr/~smaragd/theses/antoniadis.pdf}{ (link)} \\
+Advisor: Yannis Smaragdakis 
+  (\href{mailto:smaragd@di.uoa.gr}{\nolinkurl{smaragd@di.uoa.gr}}) \\
+Grade: $8.51 / 10$. Salutatorian of graduating class. %--(\mytilde{}50 graduates).
 
 \end{rSection}
 
@@ -63,66 +62,59 @@ Grade: $8.80 / 10$. Top of graduating class (\mytilde{}50 graduates).
 
 \begin{rSection}{Experience}
 
-\begin{rSubsection}{LogicBlox, Inc}
-  {April 2012 -- August 2012}
-  {Software Engineer Intern, Compiler Technologies}
-  {Atlanta, GA, USA}
-\item Supervisor: Shan Shan Huang
-  (\href{mailto:ssh@logicblox.com}{\nolinkurl{ssh@logicblox.com}})
-\itemsep +0.5pt % increase space between items
-\item Contributed to the active development of \textsc{BloxAnalysis},
-  a tool used to perform static analysis of Datalog programs
-  by representing them in a LogicBlox workspace.
-\item Implemented a clone-detection library using \textsc{BloxAnalysis}
-  that is able to
+\begin{rSubsection}
+  {CERN}
+  {October 2012 -- September 2013}
+  {Technical Student, PH-CMG-PS}
+  {Geneva, GE, CH}
+\item Supervisor: Colin Bernet
+  (\href{mailto:Colin.Bernet@cern.ch}{\nolinkurl{Colin.Bernet@cern.ch}})
+  \itemsep +0.5pt % increase space between items
+\item Contributed to the active development of a physics analysis framework,
+  in particular the production of datasets and the database management.
+\item Other tasks: \\
   \begin{inparaenum}[(i)]
-  \item trace isomorphic formulas,
-  \item identify redundant rules in Datalog programs, and
-  \item detect alternate indices that can be used in place of original
-    predicates for optimization purposes.
+  \item Developed a web page for dataset comparisons using root histograms, \\
+  \item Created C++ dynamic libraries for physics using GNU autotools, \\
+  \item Contributed to the migration of the group's software from CVS to Git.
   \end{inparaenum}
-\item Implemented a string-concatenation library that reduces the
-  space complexity of the intermediate materialized strings from
-  $O(n^2)$ to $O(nlogn)$.
 \end{rSubsection}
 
 %------------------------------------------------
 
-\begin{rSubsection}
-  {University of Athens}
-  {July 2011 -- present}
-  {Research Assistant, Dept. of Informatics \& Telecommunications}
-  {Athens, Greece}
-\item Supervisor: Assoc. Prof. Yannis Smaragdakis
-  (\href{mailto:smaragd@di.uoa.gr}{\nolinkurl{smaragd@di.uoa.gr}})
-\item Project: PADECL (``Advanced Program Analysis Using Declarative
-  Languages'')
-\end{rSubsection}
+% \begin{rSubsection}
+%   {University of Athens}
+%   {July 2011 -- present}
+%   {Research Assistant, Dept. of Informatics \& Telecommunications}
+%   {Athens, Greece}
+% \item Supervisor: Assoc. Prof. Yannis Smaragdakis
+%   (\href{mailto:smaragd@di.uoa.gr}{\nolinkurl{smaragd@di.uoa.gr}})
+% \item Project: PADECL (``Advanced Program Analysis Using Declarative
+%   Languages'')
+% \end{rSubsection}
 
 %------------------------------------------------
 
-\begin{rSubsection}
-  {University of Athens}
-  {October 2010 -- June 2011}
-  {Research Developer, Dept. of Informatics \& Telecommunications}
-  {Athens, Greece}
-\item Supervisor: Prof. Alex Delis
-  (\href{mailto:ad@di.uoa.gr}{\nolinkurl{ad@di.uoa.gr}})
-\item Project: \href{http://pernasvip.di.uoa.gr/index.php}{PERNASVIP}
-\item Description: Development of the Itinerary Planner Server,
-  i.e. the server who generates the
-  \href{http://pernasvip.di.uoa.gr/index.php/gen-spef/itinerary-example}{itineraries}
-  that will be used for navigation by the end-users of the system
-\end{rSubsection}
-
+% \begin{rSubsection}
+%   {University of Athens}
+%   {October 2010 -- June 2011}
+%   {Research Developer, Dept. of Informatics \& Telecommunications}
+%   {Athens, Greece}
+% \item Supervisor: Prof. Alex Delis
+%   (\href{mailto:ad@di.uoa.gr}{\nolinkurl{ad@di.uoa.gr}})
+% \item Project: \href{http://pernasvip.di.uoa.gr/index.php}{PERNASVIP}
+% \item Description: Development of the Itinerary Planner Server,
+%   i.e. the server who generates the
+%   \href{http://pernasvip.di.uoa.gr/index.php/gen-spef/itinerary-example}{itineraries}
+%   that will be used for navigation by the end-users of the system
+% \end{rSubsection}
 \end{rSection}
 
 \begin{rSection}{Languages and Certificates}
   Greek (native), English (fluent) \\
-  Certificate of Proficiency in English, University of Michigan (USA)
-  \hfill 2003
+  Certificate of Proficiency in English, University of Cambridge (USA)
+  \hfill 2004
 \end{rSection}
-
 
 %----------------------------------
 %   TECHNICAL STRENGTHS SECTION
@@ -134,40 +126,40 @@ Grade: $8.80 / 10$. Top of graduating class (\mytilde{}50 graduates).
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 
 Programming Languages
-   & C/C++, Java, Python, Bash, Haskell, Prolog, Datalog \\
+   & C/C++, Java, Python, Bash,  Datalog \\
 
 Version Control Systems
-   & Git, Mercurial, Subversion \\
+   & CVS, Git, Mercurial, \\
 
 Editors and IDEs
-   & Emacs, Eclipse, NetBeans, Microsoft Visual Studio 6 \\
+   & Emacs, Eclipse, NetBeans, IntelliJ IDEA, CLion \\
 
 Build Automation
-   & GNU Make, Apache Ant, Apache Maven \\
+   & GNU Make, Autotools \\
 
 UNIX Skills
    & Shell Scripting, Systems Programming, Command-line Utilities \\
 
 Databases and Tools
-   & SQL, MySQL, JDBC, DBDesigner \\
+   & SQL, MySQL, Oracle SQL, JDBC, DBDesigner, MySQL Workbench \\
 
 Compilers and Debuggers
    & GCC / G++, GDB, Valgrind \\
 
 Concurrent Programming
-   & Pthreads, MPI, Java (low-level API, \texttt{java.util.concurrent.*}) \\
+   & Pthreads, Java (low-level API, \texttt{java.util.concurrent.*}) \\
 
 Operating Systems
    & Linux, BSD, Unix and Unix-like operating systems, Windows \\
 
 Frameworks
-   & ASM, BCEL, AspectJ, CGAL, ECLiPSe \\
+   & AspectJ \\
 
 Web Development
-   & HTML5 + CSS, PHP, JSP \\
+   & HTML5 + CSS, PHP, JSP, Javascript, jQuery, Java Servlets \\
 
 Other
-   & GNU Bison + Flex Lexical Analyzer, \LaTeX{}, LibreOffice \\
+   & Microsoft Office, \LaTeX{}, LibreOffice \\
 \end{tabular}}
 \end{rSection}
 
@@ -176,33 +168,46 @@ Other
 %-------------------------------------------
 
 \begin{rSection}{Activities}
-  {\bf Teaching Assistant} \hfill {2009 -- 2014} \\
-  University of Athens - Dept. of Informatics \& Telecommunications \\
+\begin{rSubsection}{}{}{}{}
+
+{\bf Teaching Assistant} \hfill {2014 -- } \\
+    
+\item University of Athens - Dept. of Informatics \& Telecommunications \\
+\\
+\begin{tabular}{@{} > {}l @{\hspace{6ex}} l }
+  Spring 2014  
+    & {\bf Systems Programming} \\
+    & Instructor: Yannis Smaragdakis \\
+  Fall 2014 
+    & {\bf Operating Systems} \\
+    & Instructor: Alex Delis
+\end{tabular}
+
+\end{rSubsection}
 \end{rSection}
 
 \begin{rSection}{Extra-Curricular Activities}
-  Reading, Music (piano, guitar), Soccer \\
+  Reading, Music, Films, Cycling, Photography \\
 \end{rSection}
-
 
 %---------------------------
 %   PUBLICATIONS SECTION
 %---------------------------
 
-\begin{rSection}{Publications}
-  \begin{rSubsection}{}{}{}{}
-    \itemsep +0.5pt % increase space between items
-  \item \fullcite{jphantom}
-  \item \fullcite{setbased}
-  \item \fullcite{introspective}
-  \end{rSubsection}
-\end{rSection}
+% \begin{rSection}{Publications}
+%   \begin{rSubsection}{}{}{}{}
+%     \itemsep +0.5pt % increase space between items
+%   \item \fullcite{jphantom}
+%   \item \fullcite{setbased}
+%   \item \fullcite{introspective}
+%   \end{rSubsection}
+% \end{rSection}
 
-\begin{rSection}{Grants and Awards}
-  \begin{rSubsection}{}{}{}{}
-  \item SIGPLAN Professional Activities Committee (PAC) travel grant
-    for ACM OOPSLA 2013.
-  \end{rSubsection}
-\end{rSection}
+% \begin{rSection}{Grants and Awards}
+%   \begin{rSubsection}{}{}{}{}
+%   \item SIGPLAN Professional Activities Committee (PAC) travel grant
+%     for ACM OOPSLA 2013.
+%   \end{rSubsection}
+% \end{rSection}
 
 \end{document}
