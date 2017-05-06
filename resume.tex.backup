@@ -12,7 +12,7 @@
 \usepackage{marvosym}
 
 % Modify document margins
-\usepackage[left=0.75in,top=0.3in,right=0.75in,bottom=0.3in]{geometry}
+\usepackage[left=0.75in,top=0.2in,right=0.75in,bottom=0.2in]{geometry}
 
 \usepackage{hyperref}
 \hypersetup{
@@ -153,10 +153,10 @@ University of Athens, Department of Informatics \& Telecommunications \\
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 
 Programming Languages
-   & Java, C/C++, Python, Bash, PHP, Prolog/Datalog, Haskell \\
+   & C/C++, Java, Python, Bash, PHP, Prolog/Datalog, Haskell \\
 
 Databases and Tools
-   & SQL (MySQL, SQLite, Oracle), NoSQL (MongoDB) \\ %(Beginner), JDBC, DBDesigner, \\
+   & SQL (MySQL, SQLite, Oracle), NOSQL (MongoDB) \\ %(Beginner), JDBC, DBDesigner, \\
 %   & MySQL Workbench \\   
 
 Operating Systems
@@ -165,11 +165,11 @@ Operating Systems
 Version Control Systems
    & Git, Mercurial \\
 
-%Editors and IDEs
-%   & Eclipse, NetBeans, IntelliJ IDEA, CLion, Pycharm, PHPStorm \\
+Editors and IDEs
+   & Eclipse, NetBeans, IntelliJ IDEA, CLion, Pycharm, PHPStorm \\
 
-% Build Automation
-%    & GNU Make, Gradle \\
+Build Automation
+   & GNU Make, Gradle \\
 
 %UNIX Skills
 %   & Shell Scripting, Systems Programming, Command-line Utilities \\
@@ -192,7 +192,7 @@ Big Data Systems
 %   & PHP, JSP, Python \\
 
 Other
-   & \LaTeX{}, TikZ, GNU Make, Gradle, OpenMP \\
+   & Microsoft Office, \LaTeX{}, TikZ, LibreOffice, GIMP(Beginner) \\
 \end{tabular}}
 \end{rSection}
 
@@ -212,32 +212,31 @@ Other
 
 {\bf Teaching Assistant} \hfill \\
     
-  University of Athens - Dept. of Informatics \& Telecommunications \hfill {2013 -- 2015 } 
-%   \\
-% \\
-% \begin{tabular}{@{} > {}l @{\hspace{6ex}} l }
-%   Fall 2013  
-%     & {\bf \href{http://www.di.uoa.gr/eng/node/1098}{Design and Applications of 
-% Databases}} \\
-%     & Labs - Assignment Design - Grading
-% %    & Instructor: Yannis Ioannidis 
-% \\
-%   Spring 2014  
-%     & {\bf \href{http://www.di.uoa.gr/eng/node/1272}{Systems Programming}} \\
-%     & Assignment Design - Grading
-% %    & Instructor: Yannis Smaragdakis 
-% \\
-%   Fall 2014 
-%     & {\bf \href{http://www.di.uoa.gr/eng/node/1112}{Operating Systems}} \\
-%     & Assignment Design - Grading
-% %    & Instructor: Alex Delis 
-% \\
-%   Spring 2015  
-%     & {\bf \href{http://www.di.uoa.gr/eng/node/1098}{Design and Applications of 
-% Databases}} \\
-%     & Assignment Design - Grading
-% %    & Instructor: Yannis Ioannidis 
-% \\
+ University of Athens - Dept. of Informatics \& Telecommunications \\
+\\
+\begin{tabular}{@{} > {}l @{\hspace{6ex}} l }
+  Fall 2013  
+    & {\bf \href{http://www.di.uoa.gr/eng/node/1098}{Design and Applications of 
+Databases}} \\
+    & Labs - Assignment Design - Grading
+%    & Instructor: Yannis Ioannidis 
+\\
+  Spring 2014  
+    & {\bf \href{http://www.di.uoa.gr/eng/node/1272}{Systems Programming}} \\
+    & Assignment Design - Grading
+%    & Instructor: Yannis Smaragdakis 
+\\
+  Fall 2014 
+    & {\bf \href{http://www.di.uoa.gr/eng/node/1112}{Operating Systems}} \\
+    & Assignment Design - Grading
+%    & Instructor: Alex Delis 
+\\
+  Spring 2015  
+    & {\bf \href{http://www.di.uoa.gr/eng/node/1098}{Design and Applications of 
+Databases}} \\
+    & Assignment Design - Grading
+%    & Instructor: Yannis Ioannidis 
+\\
 \end{tabular}
 
 \end{rSubsection}
@@ -270,7 +269,7 @@ Other
 %-------------------------------------------
 
 \begin{rSection}{Extra-Curricular Activities}
-  \href{https://www.goodreads.com/review/list/30403080}{Reading}, Music, Movies/TV Shows, Playing/Attending sports, Travelling (\href{https://www.google.com/maps/d/edit?mid=zunfqCxpiwTU.kOUFmlYs1s4o&usp=sharing}{My travel map}) \\
+  Reading, Music, Films/TV Shows, playing/attending sports(soccer,basketball), Travelling (\href{https://www.google.com/maps/d/edit?mid=zunfqCxpiwTU.kOUFmlYs1s4o&usp=sharing}{My travel map}) \\
 \end{rSection}
 
 %---------------------------
