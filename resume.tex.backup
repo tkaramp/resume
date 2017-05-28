@@ -12,7 +12,7 @@
 \usepackage{marvosym}
 
 % Modify document margins
-\usepackage[left=0.75in,top=0.2in,right=0.75in,bottom=0.2in]{geometry}
+\usepackage[left=0.75in,top=0.3in,right=0.75in,bottom=0.3in]{geometry}
 
 \usepackage{hyperref}
 \hypersetup{
@@ -43,9 +43,9 @@
 %-----------------------
 
 \name{Thomas Karampelas}
-\address{9 Nearchou Street \\ Ilioupolis (Athens 163-41), Attica, Greece}
+\address{9 Nearchou Street 16341 \\ Ilioupoli, Athens, Greece}
 \address{\homephone{+30 210 9910 209} \cellphone{+30 697 882 6467} 
-\email{thomas.karamp@gmail.com}}
+\email{tkarampe@gmail.com}}
 
 \begin{document}
 \newcommand{\mytilde}{\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}
@@ -59,11 +59,18 @@
 \begin{rSection}{Experience}
 
 \begin{rSubsection}
-  {Hellenic Army Information Technology Support (\href{http://http://www.army.gr/default.php?pname=kepyes/}{KEPYES})}
+  {Hellenic Army Information Technology Support  (\href{http://www.army.gr/default.php?pname=kepyes}{KEPYES})}
   {December 2016 -- August 2017}
   {Database Administrator}
-  {Athens, AT, GR}
+  {Athens, Greece}
+    \begin{itemize}
+   \item Design of database schemas, data modeling and performance tuning
+   \item Development and maintenance of PL/SQL programs
+   \item Security management of databases, as well as database backup management
 
+    \end{itemize}
+   \textit{Technologies used:} Oracle RDBMS 11g, Oracle Discoverer, Oracle Enterprise Manager, MySQL, Monyog
+ 
 %   \begin{itemize}
 %	\item Supervisor: Georgios Hondos
 %	(\href{mailto:g.hondos@gmail.com}{\nolinkurl{g.hondos@gmail.com}})
@@ -75,11 +82,17 @@
   {\href{http://www.madgik.di.uoa.gr/}{Madgik} Group}
   {May 2015 -- October 2016}
   {Research Associate / Software Engineer}
-  {Athens, AT, GR}
-   Research on node-centric graph systems.
+  {Athens, Greece}
+    \begin{itemize}
+   \item Research on node-centric graph systems
+   \item In memory system implementation on both Java and C++ containing our novel ideas on the field
+    \end{itemize}
+    
+   \textit{Technologies used:} Java, C++, Git, Gradle, Apache Giraph, various graph processing systems
+
  %    \begin{itemize}
    
-%      \item Supervisor: Yannis Ioannids 
+%      \item Supervisor: Yannis Ioannidis 
 %	(\href{mailto:yannis@di.uoa.gr}{\nolinkurl{yannis@di.uoa.gr}})
 %      \item Research on node-centric graph systems
 %      \item Design and partial implementation of iterative execution plan flow for 
@@ -92,10 +105,12 @@
   {European Organisation for Nuclear Research (CERN)}
   {September 2012 -- August 2013}
   {Technical Student}
-  {Geneva, GE, CH}
-    Back-End software development in the author disambiguation team of \href{http://inspirehep.net/}{INSPIRE}. Contributed both to backend and logic - Substantial
-    refactoring/documenting of existing code.
-    
+  {Geneva, Switzerland}
+  \begin{itemize}
+   \item Back-End software development in the author disambiguation team of \href{http://inspirehep.net/}{INSPIRE}. Contributed both to backend and application logic
+   \item Substantial refactoring/documenting of existing code
+  \end{itemize}
+    \textit{Technologies used:} Python, MySQL, Bash, Git
 \end{rSubsection}
 
 %------------------------------------------------
@@ -126,17 +141,17 @@
 Systems Technology}, \textit{GPA} - $9.72$ \hfill {2013 -- 2016 } \\
 %Ethnikon kai Kapodistriakon Panepistimion Athinon / 
 University of Athens, Department of Informatics \& Telecommunications \\
-\textit{Thesis}: "Lakon: Accelerating node-centric model for graph processing by 
-preventing the propagation of false information."  \\
-\textit{Advisor}: Yannis Ioannids 
+\textit{Thesis}: ``Lakon: Accelerating node-centric model for graph processing by 
+preventing the propagation of false information.''  \\
+\textit{Advisor}: Yannis Ioannidis 
   (\href{mailto:yannis@di.uoa.gr}{\nolinkurl{yannis@di.uoa.gr}}) 
 %Grade: $9.72 / 10$.
 
 {\bf Bachelor of Science,} Computer Science, \textit{GPA} - $7.92$ \hfill {2007 -- 2013}  \\
 %Ethnikon kai Kapodistriakon Panepistimion Athinon / 
 University of Athens, Department of Informatics \& Telecommunications \\
-\textit{Thesis}: "Graph processing using sub-graph pattern matching."  \\
-\textit{Advisor}: Yannis Ioannids 
+\textit{Thesis}: ``Graph processing using sub-graph pattern matching.''  \\
+\textit{Advisor}: Yannis Ioannidis 
   (\href{mailto:yannis@di.uoa.gr}{\nolinkurl{yannis@di.uoa.gr}})
 %Grade: $7.92 / 10$. %--(\mytilde{}50 graduates).
 
@@ -153,23 +168,23 @@ University of Athens, Department of Informatics \& Telecommunications \\
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 
 Programming Languages
-   & C/C++, Java, Python, Bash, PHP, Prolog/Datalog, Haskell \\
+   & Java, C/C++, Python, Bash, PHP, Prolog/Datalog \\
 
 Databases and Tools
-   & SQL (MySQL, SQLite, Oracle), NOSQL (MongoDB) \\ %(Beginner), JDBC, DBDesigner, \\
+   & SQL (MySQL, SQLite, Oracle), NoSQL (Graph DBs, MongoDB) \\ %(Beginner), JDBC, DBDesigner, \\
 %   & MySQL Workbench \\   
 
 Operating Systems
-   & Linux, Unix-like operating systems, Windows \\
+   & Linux, Windows \\
 
 Version Control Systems
    & Git, Mercurial \\
 
 Editors and IDEs
-   & Eclipse, NetBeans, IntelliJ IDEA, CLion, Pycharm, PHPStorm \\
+   & IntelliJ IDEA, Eclipse, CLion, Pycharm, PHPStorm \\
 
-Build Automation
-   & GNU Make, Gradle \\
+% Build Automation
+%    & GNU Make, Gradle \\
 
 %UNIX Skills
 %   & Shell Scripting, Systems Programming, Command-line Utilities \\
@@ -192,7 +207,7 @@ Big Data Systems
 %   & PHP, JSP, Python \\
 
 Other
-   & Microsoft Office, \LaTeX{}, TikZ, LibreOffice, GIMP(Beginner) \\
+   & \LaTeX{}, TikZ, GNU Make, Gradle, OpenMP \\
 \end{tabular}}
 \end{rSection}
 
@@ -203,7 +218,7 @@ Other
   \hfill 2004 \\
   Certificate of Proficiency in English, University of Michigan
   \hfill 2006 \\
-  Certificate of Attendance A2 level courses, University of Lugano
+  Certificate of Attendance A2 level italian courses, University of Lugano
   \hfill 2012
 \end{rSection}
  %\pagebreak
@@ -211,40 +226,38 @@ Other
 \begin{rSubsection}{}{}{}{}
 
 {\bf Teaching Assistant} \hfill \\
-    
- University of Athens - Dept. of Informatics \& Telecommunications \\
-\\
-\begin{tabular}{@{} > {}l @{\hspace{6ex}} l }
-  Fall 2013  
-    & {\bf \href{http://www.di.uoa.gr/eng/node/1098}{Design and Applications of 
-Databases}} \\
-    & Labs - Assignment Design - Grading
-%    & Instructor: Yannis Ioannidis 
-\\
-  Spring 2014  
-    & {\bf \href{http://www.di.uoa.gr/eng/node/1272}{Systems Programming}} \\
-    & Assignment Design - Grading
-%    & Instructor: Yannis Smaragdakis 
-\\
-  Fall 2014 
-    & {\bf \href{http://www.di.uoa.gr/eng/node/1112}{Operating Systems}} \\
-    & Assignment Design - Grading
-%    & Instructor: Alex Delis 
-\\
-  Spring 2015  
-    & {\bf \href{http://www.di.uoa.gr/eng/node/1098}{Design and Applications of 
-Databases}} \\
-    & Assignment Design - Grading
-%    & Instructor: Yannis Ioannidis 
-\\
+ % Design and Applications of Databases, System Programming, Operating Systems \\
+  Labs - Assignment Design - Grading \\
+  University of Athens - Dept. of Informatics \& Telecommunications \hfill {2013 -- 2015 } 
+%   \\
+% \\
+% \begin{tabular}{@{} > {}l @{\hspace{6ex}} l }
+%   Fall 2013  
+%     & {\bf \href{http://www.di.uoa.gr/eng/node/1098}{Design and Applications of 
+% Databases}} \\
+%     & Labs - Assignment Design - Grading
+% %    & Instructor: Yannis Ioannidis 
+% \\
+%   Spring 2014  
+%     & {\bf \href{http://www.di.uoa.gr/eng/node/1272}{Systems Programming}} \\
+%     & Assignment Design - Grading
+% %    & Instructor: Yannis Smaragdakis 
+% \\
+%   Fall 2014 
+%     & {\bf \href{http://www.di.uoa.gr/eng/node/1112}{Operating Systems}} \\
+%     & Assignment Design - Grading
+% %    & Instructor: Alex Delis 
+% \\
+%   Spring 2015  
+%     & {\bf \href{http://www.di.uoa.gr/eng/node/1098}{Design and Applications of 
+% Databases}} \\
+%     & Assignment Design - Grading
+% %    & Instructor: Yannis Ioannidis 
+% \\
 \end{tabular}
 
 \end{rSubsection}
 \end{rSection}
-
-
-
-
 
 
 %----------------------------------
@@ -269,7 +282,7 @@ Databases}} \\
 %-------------------------------------------
 
 \begin{rSection}{Extra-Curricular Activities}
-  Reading, Music, Films/TV Shows, playing/attending sports(soccer,basketball), Travelling (\href{https://www.google.com/maps/d/edit?mid=zunfqCxpiwTU.kOUFmlYs1s4o&usp=sharing}{My travel map}) \\
+  \href{https://www.goodreads.com/review/list/30403080}{Reading}, Music, Movies/TV Shows, Playing/Attending sports, Travelling (\href{https://www.google.com/maps/d/edit?mid=zunfqCxpiwTU.kOUFmlYs1s4o&usp=sharing}{My travel map}) \\
 \end{rSection}
 
 %---------------------------
